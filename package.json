@@ -1,0 +1,29 @@
+{
+  "name": "image-search-service",
+  "version": "1.0.1",
+  "description": "This API allows you to search for images and browse recent search queries.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pytong/image-search-service"
+  },
+  "homepage": "https://image-search-service.herokuapp.com",
+  "bugs": "https://github.com/pytong/image-search-service/issues",
+  "keywords": [
+    "MongoDB",
+    "Mongoose",
+    "image search",
+    "Express",
+    "Node"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Puiyee Tong",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.6"
+  }
+}

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This API allows you to search for images and browse recent search queries like this.
+This API allows you to search for images and browse recent search queries.
 
 1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
 
