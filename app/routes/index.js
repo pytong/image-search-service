@@ -12,7 +12,11 @@ module.exports = (app) => {
 				offset = req.params.offset || 1;
 
 			imageUtil.getImages(searchterms, offset, (success, result) => {
-				res.json(result);
+				if(success === false) {
+					res.json({"error": result});
+				} else {
+					res.json(result);
+				}
 			});
 		});
 
