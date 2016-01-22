@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Image Search - This API allows you to search for images and browse recent search queries.</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="container">
+            <h1>Overview</h1>
+            <p>User stories:</p>
+            <p>1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</p>
+            <p>2) I can paginate through the responses by adding a ?offset=2 parameter to the URL.</p>
+            <p>3) I can get a list of the most recently submitted search strings.</p>
+
+            <h1>Example image search usage</h1>
+            <code>https://image-search-service.herokuapp.com/api/imagesearch/lolcats%20funny</code>
+
+            <h1>Example pagination usage</h1>
+            <code>https://image-search-service.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10</code>
+
+            <h1>Example recent search strings usage</h1>
+            <code>https://image-search-service.herokuapp.com/api/latest/imagesearch</code>
+		</div>
+	</body>
+
+</html>
