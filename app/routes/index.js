@@ -9,10 +9,10 @@ module.exports = (app) => {
 	app.route("/api/imagesearch/:searchterms")
 		.get((req, res) => {
 			let searchterms = req.params.searchterms,
-				offset = 1;
+				offset = req.params.offset || 1;
 
 			imageUtil.getImages(searchterms, offset, (success, result) => {
-				return res.json(true);
+				res.json(result);
 			});
 		});
 
